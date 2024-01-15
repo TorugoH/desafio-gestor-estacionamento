@@ -24,5 +24,12 @@ public class Veiculo {
     @Column(length = 10)
     private  String tipo;
 
-
+    private String dataEntrada;
+    private  String horaEntrada;
+    private String dataSaida;
+    private String horaSaida;
+    @ManyToOne(fetch =  FetchType.LAZY)
+    @JoinColumn(name="id_empresa")
+    @JsonIgnore
+    Empresa empresa;
 }

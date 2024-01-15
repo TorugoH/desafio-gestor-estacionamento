@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-public class gestor {
+public class Gestor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,5 @@ public class gestor {
     private String dataSaida;
     private String horaSaida;
 
-    @OneToMany(mappedBy="empresa")
-    private List<Empresa> empresas;
 
 }

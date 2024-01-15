@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.web.bind.annotation.Mapping;
 
 import java.util.List;
 
@@ -26,8 +25,7 @@ public class Empresa {
     private int qtdVagasMotos;
     private  int  qtdVagasCarros;
 
-    @ManyToOne(fetch =  FetchType.LAZY)
-    @JoinColumn(name= "id_gestor")
-    @JsonIgnore
-    gestor gestor;
+    @Column(name = "veiculo")
+    @OneToMany(mappedBy="empresa")
+    private List<Veiculo> veiculo;
 }
