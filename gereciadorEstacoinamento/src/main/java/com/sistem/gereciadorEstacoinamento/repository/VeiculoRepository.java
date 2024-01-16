@@ -16,6 +16,6 @@ public interface VeiculoRepository extends JpaRepository<Veiculo,Integer> {
     List<Veiculo> findVeiculoEmAberto();
     @Query("select v from Veiculo v where id =?1")
     Veiculo findOneVeiculo(@Param("id") Integer id);
-    @Query("select count (*), dataEntrada from Veiculo group By dataEntrada")
+    @Query("select count (*), dataEntrada,tipo from Veiculo group By dataEntrada,tipo")
     List<String> findRegistroDias();
 }
