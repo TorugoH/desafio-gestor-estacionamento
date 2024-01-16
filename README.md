@@ -23,3 +23,4 @@ Desenvolver um back end com Java Spring Boot onde e possivel gerenciar um estaci
 
 ### Resultado da criação
 
+<img width="1466" alt="Captura de Tela 2024-01-16 às 17 17 51" src="https://github.com/TorugoH/desafio-gestor-estacionamento/assets/40009988/9f616f6e-38e4-4050-8666-aedf81d885de">
