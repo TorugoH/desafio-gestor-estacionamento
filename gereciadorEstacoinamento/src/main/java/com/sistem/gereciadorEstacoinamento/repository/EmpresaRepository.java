@@ -11,4 +11,6 @@ public interface EmpresaRepository extends JpaRepository<Empresa, Integer  > {
     @Query("Select u from Empresa u where cnpj=?1")
     Empresa findByCnpj(@Param("cnpj")String cnpj);
 
+
+
 }
