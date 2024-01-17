@@ -18,7 +18,7 @@ Desenvolver um back end com Java Spring Boot onde e possivel gerenciar um estaci
 - [x] Validador de empresas já exite
 - [x] Controle de entrada e saida do veiculo
 - [x] Controle de quantidade de veiculo por dia com seu respectiovo tipo
-- [ ] Controle de quantidade de veiculo registrado pro dia
+- [ ] Controle de quantidade de veiculo registrado por hora
 - [ ] Sistema de autenticação
 
 ### Resultado da criação
