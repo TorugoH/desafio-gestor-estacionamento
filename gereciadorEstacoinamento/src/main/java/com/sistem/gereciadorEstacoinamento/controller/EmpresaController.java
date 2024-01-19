@@ -26,14 +26,16 @@ public class EmpresaController {
         empresaRepository.deleteById(id);
     }
     @PostMapping()
-    private  void gesitroEntradaVeiculo(@RequestBody Empresa empresa){
+    private  String gesitroEntradaVeiculo(@RequestBody Empresa empresa){
         Empresa empresaExistente = empresaRepository.findByCnpj(empresa.getCnpj());
 
         if (empresaExistente==null){
             Empresa empresaSalva = empresaRepository.save(empresa);
             salvarVeiculo(empresaSalva,empresa.getVeiculo());
+            return "Empresa com seus veiculos salva";
         } else {
             salvarVeiculo(empresaExistente,empresa.getVeiculo());
+            return "veiculos salvos";
         }
     }
 
