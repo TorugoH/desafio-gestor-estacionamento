@@ -41,6 +41,7 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 
 
 ## Documentação da API
+![Captura de Tela 2024-01-21 às 11 36 43](https://github.com/TorugoH/desafio-gestor-estacionamento/assets/40009988/e54ec1a9-218f-4a2a-88aa-52573d051e13)
 
 
 
