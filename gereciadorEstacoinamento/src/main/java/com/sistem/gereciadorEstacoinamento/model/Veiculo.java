@@ -8,6 +8,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+
 public class Veiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,4 +33,16 @@ public class Veiculo {
     @JoinColumn(name="id_empresa")
     @JsonIgnore
     Empresa empresa;
+
+    public Veiculo(String marca, String modelo, String cor, String placa, String tipo, String dataEntrada, String horaEntrada, String dataSaida, String horaSaida) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.cor = cor;
+        this.placa = placa;
+        this.tipo = tipo;
+        this.dataEntrada = dataEntrada;
+        this.horaEntrada = horaEntrada;
+        this.dataSaida = dataSaida;
+        this.horaSaida = horaSaida;
+    }
 }

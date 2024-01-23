@@ -3,13 +3,16 @@ package com.sistem.gereciadorEstacoinamento.controller;
 import com.sistem.gereciadorEstacoinamento.model.Veiculo;
 import com.sistem.gereciadorEstacoinamento.repository.VeiculoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/veiculo")
+
 public class VeiculoController {
     @Autowired
     VeiculoRepository veiculoRepository;
@@ -23,9 +26,10 @@ public class VeiculoController {
         return  veiculoRepository.findRegistroDias();
     }
     @PostMapping("/registrarEntrada")
-    private void cadastrarVeiculo (@RequestBody Veiculo veiculo){
+    public String cadastrarVeiculo (@RequestBody Veiculo veiculo){
 
         veiculoRepository.save(veiculo);
+        return "Cadastrado";
     }
     @DeleteMapping("{id}")
     private void apagarVeiculo(@PathVariable("id") int id){
