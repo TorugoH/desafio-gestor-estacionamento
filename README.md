@@ -6,7 +6,7 @@ Projeto e desenvolver um back end para gerenciamento de uma estacionamento
 
 ## Stack utilizada
 
-**Back-end:** Java, SpringBoot, Posgre, JustUnit, Swageer
+**Back-end:** Java, SpringBoot, Postgre, JustUnit, Swageer
 
 
 ## Funcionalidades
@@ -58,6 +58,7 @@ Para rodar os testes, excute o arquivo GereciadorEstacoinamentoApplicationTests,
 ## Roadmap
 
 - Implentação da autenticação usando JWT
+- Implementando conceitos de solid
 
 
 ## Apêndice
